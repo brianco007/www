@@ -3,29 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/jpg" href="favicon.png"/>
+    <!-- Font Family -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/jpg" href="assests/favicon.png"/>
     <title>All About Me</title>
 </head>
 <body>
-    <p>Enlace Externo</p>
-    <a href="https://latareadeingles.com" target="_blank">Clic aquí</a>
 
-    <p>Enlace Interno</p>
-    <a href="another.html">Clic aquí</a>
+  <header id="inicio">
+    <h1>Brian Alexander Córdoba Mingán</h1>
+    <div class="wave" style="height: 130px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 342.83,-25.14 508.17,88.33 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path></svg></div>
+  </header>
+  
+  <nav>
+    <a href="#pasatiempos">Mis pasatiempos</a>
+    <a href="#receta">Mi receta</a>
+    <a href="#horario">Mi horario</a>
+    <a href="#cancion">Mi canción favorita</a>
+    <a href="#video">Mi video</a>
+  </nav>
 
-    <p>Enlace muerto</p>
-    <a href="#">Clic aquí</a>
-    
-    <p>Enlace que dirige a la raíz/inicio</p>
-    <a href="/">Clic aquí</a>
+  <main>
+    <img src="assests/me-foto.jpg" alt="Imagen de profesor">
+    <p>Soy apasionado por el estudio de las lenguas extranjeras. Uno de mis sueños es ser políglota algún día. Me gusta ayudar a que las personas vean que el inglés no es tan difícil como parece.</p>
+    <a href="#footer">
+      <button>Contacto</button>
+    </a>
+  </main>
+  <aside id="pasatiempos">
+    <h3>Mis pasatiempos</h3>
+    <ul>
+      <li>Jugar ajedrez ♟️</li>
+      <li>Tocar la guitarra 🎸</li>
+      <li>Leer libros 📖</li>
+      <li>Pasear mis perros 🐕</li>
+    </ul>
+  </aside>
+  <section class="comida-favorita" id="receta">
+    <h3>¿Cómo preparar huevos revueltos?</h3>
+    <ol>
+      <li>Caliente un poco de aceite en un sartén.</li>
+      <li>Revuelva los huevos que desee en un plato.</li>
+      <li>Vierta los huevos revueltos en el sarten.</li>
+      <li>Cuando ya estén agregue sal al gusto.</li>
+    </ol>
+  </section>
 
-    <p>Sección Interna</p>
-    <a href="#otra-seccion">Clic aquí</a>
+  <section id="horario">
+    <h3>Mi horario</h3>
+    <table>
+      <thead>
+        <th>Actividad</th>
+        <th>Desde</th>
+        <th>Hasta</th>
+      </thead>
+      <tr>
+        <td>Trabajar</td>
+        <td>8:00 AM</td>
+        <td>12:00 PM</td>
+      </tr>
+      <tr>
+        <td>Pasear los perros</td>
+        <td>1:00 PM</td>
+        <td>2:00 PM</td>
+      </tr>
+      <tr>
+        <td>Tomar una siesta</td>
+        <td>2:00 PM</td>
+        <td>3:00 PM</td>
+      </tr>
+      <tr>
+        <td>Ir al gym</td>
+        <td>3:30 PM</td>
+        <td>4:30 PM</td>
+      </tr>
+      <tr>
+        <td>Bootcamp</td>
+        <td>6:00 PM</td>
+        <td>10:00 PM</td>
+      </tr>
+    </table>
+  </section>
+
+  <section id="cancion">
+    <h3>Mi canción favorita</h3>
+    <audio src="assests/Avicii - The Nights (Lyrics).mp3" controls></audio>
+  </section>
+
+  <section id="video">
+    <h3>Mi video favorito</h3>
+    <video src="assests/video.mp4" autoplay muted loop></video>
+  </section>
+
+  <footer id="footer">
+    <h3>Contacto</h3>
+    <div class="info-container">
+      <p><strong>Email: </strong> briancormin@gmail.com</p>
+      <p><strong>WhatsApp: </strong> 317 325 3124</p>
+    </div>
+  </footer>
 
 
-    <section id="otra-seccion">
-        <h2 style="margin-top: 800px; text-align: center; font-size: 5rem;">Soy otra sección de tu página</h2>
-    </section>
-    
+  <a href="#inicio" class="up">
+    <img src="assests/up.png" alt="ícono hacia arriba" href="#index">
+  </a>
+  
 </body>
 </html>

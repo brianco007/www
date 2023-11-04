@@ -1,10 +1,12 @@
 # www
 --- 
-##  🥸 Repo - About Me 🥸
+##  BIT - Proyecto #1
 
-This is the first description I've written on Markdown
+A continuación encontrarán el primer proyecto creado en el programa de Desarrollo Web Full Stack.
 
+### Lenguajes usados
+HTML, CSS
 ---
-Created by: [Brian](https://latareadeingles.com)
+Created by: [Brian Córdoba - Repositorio GitHub](https://github.com/brianco007/www)
 
 
