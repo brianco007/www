@@ -1,14 +1,14 @@
 /*variables*/
 
 :root{
-  --purple: #1a936f;
-  --lightpurple: green;
+  --verdiazul: #1a936f;
+  --green: green;
   --marginTop: 30px;
   --btnPadding: 10px 20px;
   --borderRadious: 15px;
   --paddingSection: 50px 0;
   --sectionTitle: 40px;
-  --sombrita: 3px 3px 6px rgba(0,0,0,.2);
+  --sombrita: 3px 3px 10px rgba(0,0,0,.5);
 }
 
 /*reset styles*/
@@ -32,7 +32,7 @@ html{
 }
 
 header{
-  background-color: var(--purple);
+  background-color: var(--verdiazul);
   text-align: center;
   font-size: 1.5rem;
   color: #fff;
@@ -51,7 +51,7 @@ header{
 nav{
   display: flex;
   align-items: center;
-  background-color: var(--purple);
+  background-color: var(--verdiazul);
   padding: 10px;
   margin-top: 10px;
   border-radius: 25px;
@@ -110,7 +110,7 @@ main p{
 
 main button{
   padding: var(--btnPadding);
-  background-color: var(--purple);
+  background-color: var(--verdiazul);
   color: #fff;
   border-radius: var(--borderRadious);
   cursor: pointer;
@@ -119,11 +119,11 @@ main button{
   margin-top: var(--marginTop);
 }
 main button:hover{
-  background-color: var(--lightpurple);
+  background-color: var(--green);
 }
 
 aside{
-  background: var(--purple);
+  background: var(--verdiazul);
   font-size: 1.3rem;
   color: #fff;
   width: 100%;
@@ -149,7 +149,7 @@ aside ul{
 
 .comida-favorita h3{
   font-size: var(--sectionTitle);
-  color: var(--purple);
+  color: var(--verdiazul);
 }
 
 .comida-favorita ol{
@@ -158,7 +158,7 @@ aside ul{
 }
 
 #horario{
-  background-color: var(--purple);
+  background-color: var(--verdiazul);
   padding: var(--paddingSection);
   width: 100%;
   color: #fff;
@@ -192,7 +192,7 @@ td{
 }
 
 #cancion h3{
-  color: var(--purple);
+  color: var(--verdiazul);
   font-size: var(--sectionTitle);
 }
 
@@ -200,10 +200,24 @@ audio{
   margin-top: var(--marginTop);
 }
 
+#cancion dl{
+  margin-top: var(--marginTop);
+  font-size: 1.3rem;
+  line-height: 1;
+}
+
+#cancion dt{
+  font-weight: bolder;
+  color: var(--verdiazul);
+}
+
+#cancion dd{
+  margin-left: 15px;
+}
 
 #video{
   width: 100%;
-  background-color: var(--purple);
+  background-color: var(--verdiazul);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -220,6 +234,21 @@ video{
   margin-top: var(--marginTop);
 }
 
+
+#juego{
+  padding: var(--paddingSection);
+  text-align: center;
+}
+
+#juego h3{
+  font-size: var(--sectionTitle);
+  color: var(--verdiazul);
+}
+
+#juego iframe{
+  margin-top: var(--marginTop);
+}
+
 footer{
   padding: var(--paddingSection);
   font-size: 1.3rem;
@@ -230,11 +259,13 @@ footer{
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background-color: var(--verdiazul);
+  position: relative;
 }
 
 footer h3{
   font-size: var(--sectionTitle);
-  color: var(--purple);
+  color: #fff;
 }
 
 .info-container{
@@ -254,7 +285,7 @@ footer h3{
   content: "";
   width: 100%;
   height: 50px;
-  background: linear-gradient(var(--purple), var(--purple));
+  background: #fff;
   position: absolute;
   animation: rotate 4s linear infinite;
 }
@@ -262,17 +293,18 @@ footer h3{
 .info-container p{
   position: relative;
   z-index: 10;
+  color: #fff;
 }
 
 .info-container strong{
-  color: var(--purple);
+  color: #fff;
 }
 
 .info-container::after{
   content: "";
   position: absolute;
   inset: 4px;
-  background-color: #fff;
+  background-color: var(--verdiazul);
   border-radius: 25px;
 }
 
@@ -285,10 +317,17 @@ footer h3{
   }
 }
 
+
+.wave-footer{
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+
 .up{
   background-color: #fff;
   position: absolute;
-  border: 2px solid var(--purple);
+  border: 2px solid var(--verdiazul);
   width: 40px;
   bottom: 2%;
   right: 2%;
