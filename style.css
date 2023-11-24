@@ -356,9 +356,10 @@ footer h3{
   width: 30px;
   height: 30px;
   position: absolute;
-  top: 18%;
+  top: 15%;
   right: 1%;
   appearance: none;
+  cursor: pointer;
 }
 
 
@@ -453,7 +454,7 @@ footer h3{
 
 @media screen and (max-width:444px){
   #checkbox{
-    top: 24%;
+    top: 20%;
   }
   #checkbox:checked + label{
     top: 21.6%;
