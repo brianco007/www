@@ -420,7 +420,7 @@ footer h3{
     position: absolute;
     left: -450%;
     right: 12%;
-    top: 15.3%;
+    top: 20.3%;
   }
   
   #checkbox:checked + label{
@@ -428,8 +428,12 @@ footer h3{
     position: absolute;
     left: 0;
     right: 12%;
-    top: 15.3%;
+    top: 11.3%;
     transition: left .5s;
+  }
+
+  #checkbox{
+    top: 12.8%;
   }
   nav{
     display: flex;
@@ -454,10 +458,10 @@ footer h3{
 
 @media screen and (max-width:444px){
   #checkbox{
-    top: 20%;
+    top: 17%;
   }
   #checkbox:checked + label{
-    top: 21.6%;
+    top: 15.6%;
   }
 }
 
